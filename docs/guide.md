@@ -27,7 +27,7 @@ pip install zor
 ### Install from Source
 
 ```bash
-git clone https://github.com/arjuuuuuunnnnn/zor.git
+git clone https://github.com/admincodes7/zor.git
 cd zor
 pip install -e .
 ```

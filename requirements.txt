@@ -59,4 +59,4 @@ typing-inspection==0.4.0
 typing_extensions==4.13.2
 uritemplate==4.1.1
 urllib3==2.4.0
--e git+https://github.com/arjuuuuunnnnn/zor.git@f14e748c2d82de8c9616d5b6d087581fe66030e1#egg=zor
+-e git+https://github.com/admincodes7/zor.git@f14e748c2d82de8c9616d5b6d087581fe66030e1#egg=zor

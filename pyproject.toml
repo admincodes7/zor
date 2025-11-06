@@ -32,8 +32,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/arjuuuuunnnnn/zor"
-"Bug Tracker" = "https://github.com/arjuuuuunnnnn/zor/issues"
+"Homepage" = "https://github.com/admincodes7/zor"
+"Bug Tracker" = "https://github.com/admincodes7/zor/issues"
 
 [project.scripts]
 zor = "zor.main:app"

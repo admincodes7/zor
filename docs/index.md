@@ -2,14 +2,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
-[![PRs Welcome](https://img.shields.io/github/issues-pr/arjuuuuunnnnn/zor)](CONTRIBUTING.md)
-[![Build Status](https://github.com/arjuuuuunnnnn/zor/actions/workflows/python-package.yml/badge.svg)](https://github.com/arjuuuuunnnnn/zor/actions)
+[![PRs Welcome](https://img.shields.io/github/issues-pr/admincodes7/zor)](CONTRIBUTING.md)
+[![Build Status](https://github.com/admincodes7/zor/actions/workflows/python-package.yml/badge.svg)](https://github.com/admincodes7/zor/actions)
 [![PyPI Downloads](https://img.shields.io/pepy/dt/zor?cacheSeconds=3600)](https://pypi.org/project/zor)
 [![Stable Version](https://img.shields.io/pypi/v/zor?color=blue)](https://pypi.org/project/zor/)
 
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/arjuuuuunnnnn/zor/refs/heads/master/assets/card.jpg" alt="Zor Logo" width="150" height="75"/>
+  <img src="https://raw.githubusercontent.com/admincodes7/zor/refs/heads/master/assets/card.jpg" alt="Zor Logo" width="150" height="75"/>
   <p><i>Powerful AI assistance for your codebase</i></p>
 </div>
 
@@ -28,7 +28,7 @@ Zor is an open-source command-line tool that brings AI-powered code assistance d
 
 ## Quick Demo
 
-[![Demo Video](https://raw.githubusercontent.com/arjuuuuunnnnn/zor/refs/heads/master/assets/coverpage.png)](https://youtu.be/mS0ONPNhMmU?si=efayT3KuuiqZtksH)
+[![Demo Video](https://raw.githubusercontent.com/admincodes7/zor/refs/heads/master/assets/coverpage.png)](https://youtu.be/mS0ONPNhMmU?si=efayT3KuuiqZtksH)
 
 ## Tech Stack
 
@@ -49,7 +49,7 @@ pip install zor
 Or install from source:
 
 ```bash
-git clone https://github.com/arjuuuuuunnnnn/zor.git
+git clone https://github.com/admincodes7/zor.git
 cd zor
 pip install -e .
 ```

@@ -50,7 +50,7 @@ When suggesting a feature:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/arjuuuuuunnnnn/zor.git
+   git clone https://github.com/admincodes7/zor.git
    cd zor
    ```
 
