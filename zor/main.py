@@ -8,6 +8,8 @@ from .file_ops import edit_file, show_diff
 from .git_utils import git_commit
 from .api import generate_with_context
 from .config import load_config, save_config
+from .context_injector import init_command, clear_command, send_query
+import json
 from typing import Optional, Annotated, Callable, List
 from functools import wraps
 from typer.core import TyperGroup
@@ -220,6 +222,37 @@ def extract_code_blocks(text):
     pattern = r"```(?:\w+)?\n(.*?)```"
     matches = re.findall(pattern, text, re.DOTALL)
     return matches
+
+
+@app.command("context-init")
+def context_init(path: Optional[str] = typer.Argument(None)):
+    """Create a starter .context.md using project heuristics (no API key required)."""
+    target = Path(path) if path else Path(os.getcwd())
+    try:
+        created = init_command(target)
+        typer.echo(f"Created {created}")
+    except FileExistsError as e:
+        typer.echo(str(e), err=True)
+
+
+@app.command("context-clear")
+def context_clear(path: Optional[str] = typer.Argument(None)):
+    """Clear conversation history file (keeps `.context.md`)."""
+    target = Path(path) if path else Path(os.getcwd())
+    cleared = clear_command(target)
+    typer.echo(f"Cleared history at {cleared}")
+
+
+@app.command("context-send")
+def context_send(query: str):
+    """Assemble context and send a query using the configured environment API key.
+
+    This command does NOT require the Gemini API key used elsewhere in this
+    project; it uses the environment variables `ZOR_API_KEY`, `AI_API_KEY`, or
+    `LITELLM_API_KEY` for the `litellm` client.
+    """
+    res = send_query(query, start_path=Path(os.getcwd()))
+    typer.echo(json.dumps(res, indent=2, default=str))
 
 @app.command()
 @require_api_key
